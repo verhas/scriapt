@@ -1,5 +1,6 @@
 package com.javax0.scriapt;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
@@ -61,7 +62,7 @@ public class Processor extends AbstractProcessor {
 			engine = factory
 					.getEngineByExtension(getExtensionFrom(scriptFileName));
 		}
-		Reader scriptFileReade = new FileReader(scriptFileName);
+		Reader scriptFileReade = new FileReader(new File(scriptFileName));
 		engine.eval(scriptFileReade);
 	}
 

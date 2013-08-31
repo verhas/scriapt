@@ -6,7 +6,12 @@ Annotation processor starting external script during compilation
 This annotation processor does something very simple thing. You annotate any class of your project using the annotation:
 
 ```
+import com.javax0.scriapt.CompileScript;
+...
+
 @CompileScript("scriptToRun.extension")
+class MyClass(){
+...
 ```
 
 and the processor will execute the script for you. The only requirement is that the processor should be on the
@@ -31,4 +36,4 @@ classpath during compilation time some different way.
 
 What can you do with the executing script during compilation? Have a look at the project
 
-íhttps://github.com/verhas/scriapt-samples
+https://github.com/verhas/scriapt-samples

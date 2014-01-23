@@ -29,7 +29,7 @@ To have the annotation processor on the classpath you can specify the dependency
 		</dependency>
 ```
 
-in your maven `pom.xml` Note however that this annotatio processor is NOT a maven plugin and thus you can use it with
+in your maven `pom.xml` Note however that this annotation processor is NOT a maven plugin and thus you can use it with
 ant, buildr, graddle or just using simple javac. It only happens that I usually use maven and thus I can tell you
 what to do if you use maven. If you use some other build tool you should put the annotation processor on the compiler
 classpath during compilation time some different way.
